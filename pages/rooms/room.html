@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Eagle+Lake|Galada|Great+Vibes|Kaushan+Script|Lobster|Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Markazi+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Markazi+Text" rel="stylesheet"> 
+    <link rel="stylesheet" href="animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="hover.css">
+    
+    <link rel="stylesheet" href="imagehover.css">
+   <link rel="stylesheet" href="css/all.css">
+    <title>Our Rooms</title>
+
+    <style>
+        html,body
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        *
+        {
+            box-sizing: border-box;
+        }
+        .class1
+        {
+            width:100%;
+            height:100vh;
+            
+            position: relative;
+            background-image: url('5.jpg');
+            background-size:100% 100%;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+          
+
+
+        }
+        .overlay1
+        {
+            width: 100%;
+            height: 100%;
+         background-color: black;
+         opacity: 0.4;
+        }
+        .text1
+        {
+            width:20%;
+            height: 15%;
+           
+            color:white;
+            font-size: 60px;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+             position: absolute;
+            font-family: 'Great Vibes', cursive;
+
+        }
+       
+        .class2
+        {
+            width:100%;
+            height:50vh;
+            
+            position: relative;
+            display: flex;
+           background-image: url('d.jpg');
+           background-size: cover;
+        }
+        .heading1
+        {   top:15%;
+            left:40%;
+            color:white;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+            font-size: 40px;
+            width:20%;
+            height: 15%;
+        
+            font-family: 'Pacifico', cursive;
+        
+            display: flex;
+            align-items:center;
+            justify-content: center;
+             position: absolute;
+        }
+        .formdetails
+        {   top:40%;
+            left: 10%;
+            width:80%;
+            height: 35%;
+            font-family: 'Pacifico', cursive;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            position: absolute;
+        }
+        input[type="date"]
+        {
+            color:white;
+            background-color:navy;
+            border-color: black;
+          
+            font-size: 15px;
+        }
+        input[type="number"]
+        {
+            color:white;
+            background-color:navy;
+            border-color: black;
+           
+            font-size: 16px;
+            
+        }
+        input[type="submit"]
+        {   color:white;
+            background-color:navy;
+            border-color: black;
+            ;
+            font-size: 15px;
+            font-size: 15px;
+        }
+        input[type="reset"]
+        {
+            color:white;
+            background-color:navy;
+            border-color: black;
+           
+            font-size: 15px;
+            font-size: 15px;
+        }
+        .class3
+        { 
+             
+            width:100%;
+            height:70vh;
+        
+            position: relative;
+            background-image: url('c.jpg');
+             background-size: cover;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            
+            background-image: 
+        }
+        .itema
+        {   top:10%;
+            left:3%;
+            width:25%;
+            height:80%;
+            outline: 10px groove white;
+            outline: 10px groove white;
+            box-shadow: 0px 0px 60px rgba(15, 12, 12, 0.911);
+            background-blend-mode: hard-light;
+           
+            box-shadow: 0px 0px 60px rgba(15, 12, 12, 0.911);
+
+            position:absolute;
+            
+        }
+        .itemb
+      {
+           top:10%;
+            right:10%;
+            width:60%;
+            height:80%;
+            
+        
+            position: absolute;
+            
+        }
+        .heading2
+        { top:2%;
+         left:3%;
+         width: 35%;
+         height: 15%;
+         font-size: 40px;
+        
+         font-family: 'Great Vibes', cursive;
+         color: rgb(52,73,94);
+         display: flex;
+            align-items:center;
+            justify-content: center;
+             position: absolute;
+        }
+        .data1
+        {   top:20%;
+            width:65%;
+            height:50%;
+    
+            position: absolute;
+            font-size:25px;
+            color: black;
+            font-family: 'Markazi Text', serif;
+
+        }
+        .data2
+        { bottom:5%;
+            width: 55%;
+            height:20%;
+        
+            position: absolute;
+        }
+        .data3
+        {   right:2%;
+            box-shadow: 0px 0px 30px rgba(0,0,0,0.8);
+            top:20%;
+            width:30%;
+            height:50%;
+            border-radius: 15%;
+            position: absolute;
+            font-size:45px;
+            color: rgb(160,27,32);
+            font-family: 'Markazi Text', serif;
+            background-color: navy;
+            color:white;
+
+        }
+        .fa-tv,.fa-beer,.fa-wifi,.fa-phone,.fa-utensils,.fa-react,.fa-bath
+        {
+            color:black;
+                font-size: 40px;
+        }
+        
+
+        .button1
+        {  
+            position: absolute;
+            width: 23%;
+            height: 10%;
+           background-color: blue;
+           box-shadow: 0px 0px 30px rgba(0,0,0,0.8);
+            font-size: 23px;
+            text-decoration: none;
+            font-family: 'Markazi Text', serif;
+            bottom: 5%;
+            right: 6%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            
+            
+            
+        }
+        .button1:hover
+       {
+           background-color: rgb(238, 29, 29);
+       }
+        
+
+            
+      
+        .class4
+        {
+            width:100%;
+            height:70vh;
+    
+            position: relative;
+
+            display: flex;
+           align-items:center;
+          justify-content: center;
+          background-image: url('c.jpg');
+             background-size: cover;
+        }
+        .itemc
+        {   top:10%;
+            left:3%;
+            width:25%;
+            height:80%;
+            outline: 10px groove white;
+            outline: 10px groove white;
+            box-shadow: 0px 0px 60px rgba(15, 12, 12, 0.911);
+            background-blend-mode: hard-light;
+           
+            box-shadow: 0px 0px 60px rgba(15, 12, 12, 0.911);
+
+
+        
+            position:absolute;
+            
+        }
+        .itemd
+      {
+           top:10%;
+            right:10%;
+            width:60%;
+            height:80%;
+        
+            position: absolute;
+            
+        }
+        .heading3
+        {
+             top:2%;
+         left:3%;
+         width: 35%;
+         height: 15%;
+         font-size: 40px;
+         
+         font-family: 'Great Vibes', cursive;
+         color: rgb(53,98,114);
+         display: flex;
+            align-items:center;
+            justify-content: center;
+             position: absolute;
+        }
+        .data4
+        {
+        top:20%;
+            width:65%;
+            height:50%;
+        
+            position: absolute;
+            font-size:25px;
+            color: black;
+            font-family: 'Markazi Text', serif;
+        }
+        .data6
+        {   right:2%;
+            top:20%;
+            width:30%;
+            height:50%;
+            box-shadow: 0px 0px 30px rgba(0,0,0,0.8);
+            position: absolute;
+            font-size:45px;
+            color: rgb(160,27,32);
+            font-family: 'Markazi Text', serif;
+            background-color: navy;
+            color:white;
+            border-radius: 15%;
+        }
+        .data5
+        { bottom:5%;
+            width: 55%;
+            height:20%;
+            
+            position: absolute;
+        }
+        
+        .button2
+        {  
+            position: absolute;
+            width: 23%;
+            height: 10%;
+            box-shadow: 0px 0px 30px rgba(0,0,0,0.8);
+           background-color: blue;
+           border-radius: 20px;
+            font-size: 23px;
+            text-decoration: none;
+            font-family: 'Markazi Text', serif;
+            bottom: 5%;
+            right: 6%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+        .button2:hover
+       {
+           background-color: rgb(238, 29, 29);
+       }
+        .class5
+        {
+            width:100%;
+            height:70vh;
+    
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            position: relative;
+            background-image: url('c.jpg');
+             background-size: cover;
+        }
+        .iteme
+        {   top:10%;
+            left:3%;
+            width:25%;
+            height:80%;
+            outline: 10px groove white;
+            outline: 10px groove white;
+            box-shadow: 0px 0px 60px rgba(15, 12, 12, 0.911);
+            background-blend-mode: hard-light;
+           
+            box-shadow: 0px 0px 60px rgba(15, 12, 12, 0.911);
+
+            position:absolute;
+            
+        }
+        .itemf
+      {
+           top:10%;
+            right:10%;
+            width:60%;
+            height:80%;
+        
+            position: absolute;
+            
+        }
+        .heading4
+        { top:2%;
+         left:3%;
+         width: 35%;
+         height: 15%;
+         font-size: 40px;
+    
+         font-family: 'Great Vibes', cursive;
+         color: rgb(53,98,114);
+         display: flex;
+            align-items:center;
+            justify-content: center;
+             position: absolute;
+        }
+        .data7
+        {   top:20%;
+            width:65%;
+            height:50%;
+            
+            position: absolute;
+            font-size:25px;
+            color:black;
+            font-family: 'Markazi Text', serif;
+
+        }
+        .data8
+        { bottom:5%;
+            width: 55%;
+            height:20%;
+            
+            position: absolute;
+        }
+        .data9
+        {   right:2%;
+            top:20%;
+            width:30%;
+            height:50%;
+            box-shadow: 0px 0px 30px rgba(0,0,0,0.8);
+            position: absolute;
+            font-size:45px;
+            color: rgb(160,27,32);
+            font-family: 'Markazi Text', serif;
+            background-color: navy;
+            color:white;
+            border-radius: 15%;
+
+        }
+        .button3
+        {  
+            position: absolute;
+            width: 23%;
+            height: 10%;
+           background-color: blue;
+           border-radius: 20px;
+            font-size: 23px;
+            text-decoration: none;
+            font-family: 'Markazi Text', serif;
+            bottom: 5%;
+            right: 6%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 0px 30px rgba(0,0,0,0.8);
+            
+        }
+        .button3:hover
+       {
+           background-color: rgb(238, 29, 29);
+       }
+        .class6
+        {
+            width:100%;
+            height:20vh;
+            
+            position: relative;
+            background: #200122;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+        .qlink
+        {
+            width:13%;
+            height: 20%;
+            
+            position: absolute;
+            bottom:65%;
+            left:42%;
+            color:white;
+            font-size: 20px;
+            font-family: 'Pacifico', cursive;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+        }
+       .data10
+       {
+        width:80%;
+            height: 30%;
+            left: 10%;
+            
+            bottom: 20%;
+            color: wheat;
+            position: absolute;
+            font-size: 20px;
+            font-family: 'Pacifico', cursive;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            text-decoration: none;
+       }
+      
+    </style>
+</head>
+<body>
+    <div class="class1">
+        <div class="overlay1"></div>
+        <div class="text1"><p class="slideInUp animated">
+            <b> Our Rooms </b> </p>
+        </div>
+      
+    </div>
+    <div class="class2">
+        <div class="heading1">DETAILS</div>
+        <br>
+        <div class="formdetails">
+                <form action="first.html">
+                <input type="date" name="date" id="" size="10" title="check-in " placeholder="check in date ..." required>&nbsp;<input type="date" name="date" id="" size="10" title="check-out " placeholder="check out ..." required>&nbsp;<input type="number" name="number" id="" size="7" placeholder=" total persons" required>&nbsp;&nbsp;<input type="submit" value="search" >&nbsp;&nbsp;<input type="reset" value="reset">
+       </form>
+            </div>
+            
+        
+        </div>
+    <div class="class3">
+        <div class="itema">
+                <figure class="imghvr-shutter-out-diag-1 wow fadeInUp animated" style="height: 100%; width: 100%;">
+                        <img src="2.jpg" height="100%" width="100%">
+                        <figcaption style="background-image: url('3.jpg'); background-size: cover;">
+                            
+                        </figcaption>
+                      </figure>
+        </div>
+        <div class="itemb">
+            <div class="heading2"><p class="wow fadeInUp animated" data-wow-delay=".5s">
+                <b>Junior Suite
+                    </b>
+                </p></div>
+            <div class="data1">
+                <p > Our Junior Suite offer breathtaking view of the city skyline.</p>
+                <ul type="circle">
+                    <li> size: 260 sq.feet</li>
+                    <li>Beds:2 double(s)</li>
+                </ul> </div>
+            
+           <div class="data2">
+                <i class="fas fa-wifi" title="wifi"></i> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-tv" title="television"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-beer"title="minibar"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-phone"title="telephone"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-utensils"title="kitchen">&nbsp;&nbsp;</i><i class="fab fa-react" title="A/C"></i>&nbsp;&nbsp;</i><i class="fas fa-bath"title="bathroom"></i>
+           </div>
+           <div class="data3">
+               <p class="wow fadeInUp animated" data-wow-delay=".5s">
+                   <center>
+                   From:
+                   <br>
+                    $ 299
+                </center>
+               </p>
+
+           </div>
+           <div class="button1">
+                
+                    <a href="bookroom/booknow.html" style="color: white"> Book Now</a>
+                </button1>
+           </div>
+        </div>
+        
+        
+
+    </div>
+    <div class="class4">
+        <div class="itemc">
+            <figure class="imghvr-shutter-out-diag-1 wow fadeInUp animated" style="height: 100%; width: 100%;">
+                    <img src="6.jpg" height="100%" width="100%">
+                    <figcaption style="background-image: url('5.jpg'); background-size: 100% 100%;">
+                        
+                    </figcaption>
+                  </figure>
+    </div>
+    <div class="itemd">
+        <div class="heading3"><p class="wow fadeInUp animated" data-wow-delay=".5s">
+            <b>Standard Room
+                </b>
+            </p></div>
+        <div class="data4">
+            <p > Our Standard Rooms are the perfect combinations of functions and comfort.</p>
+            <ul type="circle">
+                <li> size: 240 sq.feet</li>
+                <li>Beds:1 double(s)</li>
+            </ul> </div>
+            <div class="data5">
+                <i class="fas fa-wifi" title="wifi"></i> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-tv" title="television"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-beer"title="minibar"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-phone"title="telephone"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-utensils"title="kitchen">&nbsp;&nbsp;</i><i class="fab fa-react"title="A/C">&nbsp;&nbsp;</i><i class="fas fa-bath"title="bathroom"></i>
+           </div>
+           <div class="data6">
+            <p class="wow fadeInUp animated" data-wow-delay=".5s">
+                <center>
+                    From:
+                <br>
+                 $ 199
+             </center>
+            </p>
+
+        </div>
+        <div class="button2">
+                
+            <a href="first.html" style="color: white"> Book Now</a>
+        </button2>
+   </div>
+        
+    </div>
+    </div>
+    <div class="class5">
+            <div class="iteme">
+                    <figure class="imghvr-shutter-out-diag-1 wow fadeInUp animated" style="height: 100%; width: 100%;">
+                            <img src="4.jpg" height="100%" width="100%">
+                            <figcaption style="background-image: url('10.jpg'); background-size: 100% 100%;">
+                                
+                            </figcaption>
+                          </figure>
+            </div>
+            <div class="itemf">
+                    <div class="heading4"><p class="wow fadeInUp animated" data-wow-delay=".5s">
+                        <b>Superior Room
+                            </b>
+                        </p></div>
+                    <div class="data7">
+                            <p > Our Superior room are comfortable, roomy and elegant.</p>
+                            <ul type="circle">
+                                <li> size: 280 sq.feet</li>
+                                <li>Beds:1 King(s)</li>
+                            </ul> </div>
+                            <div class="data8">
+                                    <i class="fas fa-wifi" title="wifi"></i> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-tv" title="television"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-beer"title="minibar"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-phone"title="telephone"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-utensils"title="kitchen">&nbsp;&nbsp;</i><i class="fab fa-react" title="A/C"></i>&nbsp;&nbsp;</i><i class="fas fa-bath"title="bathroom"></i>
+                               </div>
+                               <div class="data9">
+                                    <p class="wow fadeInUp animated" data-wow-delay=".5s">
+                                        <center>
+                                        From:
+                                        <br>
+                                         $ 399
+                                     </center>
+                                    </p>
+                     
+                                </div>
+                                <div class="button3">
+                
+                                        <a href="first.html" style="color: white"> Book Now</a>
+                                    </button3>
+                               </div>
+        
+    </div>
+    </div>
+    <div class="class6">
+        <div class="qlink">
+           <u>
+                <p class=" wow fadeInUp animated" >QUICK &nbsp; LINK</p>
+            </u>
+        </div>
+        <div class="data10">
+                 <a href="home.html"style="color: white ">home</a> </a> &nbsp;&nbsp;&nbsp; <a href="index2.html"style="color: white">Rooms</a>&nbsp;&nbsp;&nbsp;<a href="dining.html"style="color: white">Dining & events</a>&nbsp;&nbsp;&nbsp;<a href="about.html"style="color: white">About</a>&nbsp;&nbsp;&nbsp; <a href=" contact.html" style="color: white">Contact</a>
+                
+               
+        </div>
+    </div>
+    <script src="wow.js">
+        </script>
+         <script>
+             new WOW().init();
+         </script>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="hover.css">
+<link rel="stylesheet" href="animated.css">
+<link rel="stylesheet" href="imagehover.css">
+<link href="https://fonts.googleapis.com/css?family=Cookie|Eagle+Lake|Great+Vibes|Kaushan+Script|Orbitron|Pacifico|Satisfy" rel="stylesheet">
+    <title>booknow</title>
+</head>
+<style>
+     html,body
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        *
+        {
+            box-sizing: border-box;
+        }
+    
+        .class1
+        {
+           width: 100%;
+           height: 85vh;
+           border:2px solid black;
+           position: relative;
+           display: flex;
+           
+            justify-content: center;
+            align-items: center;
+            background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+        }
+        .heading1
+        { top:3%;
+            width: 30%;
+           height: 10vh;
+           
+           position: absolute;
+           font-size: 60px;
+           color:white;
+           font-family: 'Great Vibes', cursive;
+           display: flex;
+           box-shadow: 0px 0px 10px rgba(0,0,0, 0.60);
+           justify-content: center;
+           align-items: center;
+        }
+        .box1
+        {  left:6%;
+           bottom:10%;
+            width: 50%;
+           height: 60vh;
+           display: flex;
+           
+           background-size: cover;
+            outline: 10px groove white;
+            outline: 10px groove white;
+            box-shadow: 0px 0px 60px rgba(15, 12, 12, 0.7);
+            position: absolute;
+          
+            background-blend-mode: hard-light;
+        }
+       .box2
+       {
+           right:6%;
+           bottom:10%;
+            width: 30%;
+           height: 60vh;
+           font-size: 30px;
+           color:black;
+           font-family: 'Satisfy', cursive;
+           box-shadow: 0px 0px 60px rgba(15, 12, 12, 0.7);
+            position: absolute;
+            background: #abbaab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+           
+           display: flex;
+           padding: 50 px;
+       }
+            
+        .class2
+        {
+            width: 100%;
+           height: 110vh;
+           
+           position: relative;
+           display: flex;
+           background: #83a4d4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+           justify-content: center;
+            align-items: center;
+        }
+        .heading2
+        { top:5%;
+            width: 30%;
+           height: 10vh;
+           
+           position: absolute;
+           font-size: 60px;
+           color:black;
+           font-family: 'Great Vibes', cursive;
+           display: flex;
+           box-shadow: 0px 0px 10px rgba(0,0,0, 0.60);
+           justify-content: center;
+           align-items: center;
+           background: #abbaab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+           
+        }
+        .box3
+        {
+            width: 30%;
+            height: 80%;
+           
+           border-top-left-radius: 10px;
+           border-top-right-radius: 10px;
+           border-bottom-left-radius: 10px;
+           border-bottom-right-radius: 10px;
+            position: absolute;
+            box-shadow: 0px 0px 10px rgba(0,0,0, 0.60);
+            bottom:3%;
+            display: flex;
+            background: #abbaab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            
+            justify-content: center;
+             align-items: center;
+         
+        }
+         input[type="email"]
+       {
+           
+        font-size: 15px;
+            margin: 2%;
+            width: 70%;
+            margin-left: 8%;
+            border-radius: 7px;
+            border: none;
+           outline: none;
+           background-color: #ADA996;
+       }
+       input[type="text"]
+       {
+        font-size: 15px;
+            margin: 2%;
+            width: 70%;
+            margin-left: 8%;
+            border-radius: 7px;
+            border: none;
+           outline: none;
+           background-color: #ADA996;
+       }
+       input[type="number"]
+       {
+           
+        font-size: 15px;
+            margin: 2%;
+            width: 70%;
+            margin-left: 8%;
+            border-radius: 7px;
+            border: none;
+           outline: none;
+           background-color: #ADA996;
+       }
+       input[type="date"]
+       {
+           
+        font-size: 15px;
+            margin: 2%;
+            width: 70%;
+            margin-left: 8%;
+            border-radius: 7px;
+            border: none;
+           outline: none;
+           background-color: #ADA996;
+       }
+       input[type="submit"]
+        {
+            font-size: 30px;
+            margin: 2%;
+            width: 60%;
+            background-color:steelblue;
+            margin-left: 8%;
+            border-radius: 7px;
+            cursor: pointer;
+            border: none;
+           outline: none;
+        }
+        input[type="submit"]:hover{
+            background-color: green;
+            color: white;
+        }
+</style>
+<body>
+    <div class="class1">
+        <div class="heading1"><p>
+            <b>Type of  Room </b></p></div>
+        <div class="box1">
+                <figure class="imghvr-shutter-out-diag-1 wow fadeInUp animated" style="height: 100%; width: 100%;">
+                        <img src="2.jpg" height="100%" width="100%">
+                        <figcaption style="background-image: url('3.jpg'); background-size: cover;">
+                            
+                        </figcaption>
+                      </figure>
+        </div>
+        <div class="box2">
+            <ul type="circle">
+               
+                <li> Room type: Junior suite</li>
+                <li> Check in time: 10 am </li>
+                <li> Check out time: 23 hrs after check in</li>
+                <li> Total  charges: $299</li>
+            
+                
+            </ul>
+        </div>
+    </div>
+    <div class="class2">
+        <div class="heading2"> Customer Details</div>
+
+        <div class="box3">
+                <form action="succes.html">
+                    <br>
+                    &nbsp; &nbsp;  <b>Guest name</b>
+                        <br>
+                        
+                        &nbsp; &nbsp; &nbsp;<input type="text" name="name" id="" size="35" placeholder="Your Name "required>
+                        <br>
+                        <br>
+                        
+                        &nbsp; &nbsp; <b>Email Address</b>
+                        <br>
+                        
+                        &nbsp; &nbsp; &nbsp; <input type="email" name="email" id="" size="35" placeholder="Your email "required>
+                        <br>
+                        <br>
+                        
+                        &nbsp; &nbsp; <b>Country</b>
+                        <br>
+                        
+                        &nbsp; &nbsp; &nbsp; <input type="text" name="name" id="" size="30" placeholder="Your country "required>
+                        <br>
+                        <br>
+                        
+                        &nbsp; &nbsp;<b> Phone no.</b>
+                        <br>
+                        
+                        &nbsp; &nbsp; &nbsp; <input type="number" name="mobile" id="" size="45" placeholder="Enter Phone No." required>
+                        <br>
+                        <br>
+                        
+                        &nbsp; &nbsp;<b> Check in date</b>
+                        <br>
+                        &nbsp; &nbsp; &nbsp;<input type="date" name="date" id="" size="10" placeholder="check in date ..." required>
+                        <br>
+                        <br>
+                        
+                        &nbsp; &nbsp; <b>Check out date</b>
+                        <br>
+                        &nbsp; &nbsp; &nbsp;<input type="date" name="date" id="" size="10" placeholder="check in date ..." required>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="submit" value="BOOK">
+
+
+
+
+
+
+
+
+        </div>
+       
+    </div>
+</body>
+</html>

@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+ <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<link rel="stylesheet" href="css/hover.css">
+<link rel="stylesheet" href="css/animated.css">
+<link rel="stylesheet" href="css/imagehover.css">
+<link href="https://fonts.googleapis.com/css?family=BenchNine|Courgette|Galada|Lobster|Markazi+Text|Playball|Shrikhand|Tangerine:700" rel="stylesheet">
+    <style>
+        html,body
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        *
+        {
+            box-sizing: border-box;
+        }
+        .class1
+        {
+            height: 150vh;
+            width: 100%;
+            position: absolute;
+            top: 100%;
+            
+            background-color: rgb(236, 236, 232);
+
+
+        }
+        .class2
+        {
+            height: 66vh;
+            width: 100%;
+            background: #FFEFBA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            position: absolute;
+            top: 250%;
+            
+        }
+        .class3
+        {
+            height: 18vh;
+            width: 100%;
+            
+            position: absolute;
+            top: 316%;
+            background-color: #005AA7;
+        }
+        .scroll
+        {
+            height: 5%;
+            width: 5%;
+            
+            position: absolute;
+            right: 2%;
+            bottom: 5%;
+            position: fixed;
+            z-index: 100000000000;
+        }
+        .fa-arrow-circle-up
+        {
+           font-size: 40px;
+           color: red;
+        }
+        #wowslider-container1
+        {
+            height: 100vh;
+            width:100%;
+            position: absolute;
+            top: 10%;
+            position: relative;
+            cursor: none;
+           
+        }
+        .content
+        {
+        height: 50%;
+        width: 40%;
+        
+       z-index:  10000000;
+       position: absolute;
+       top: 30%;
+       left: 50%;
+       cursor: default;
+       color:white;
+       font-size: 50px;
+       font-family: 'Markazi Text', serif;
+            
+
+        }
+        .button 
+        {
+            height: 18%;
+            width: 35%;
+        
+            position: absolute;
+            bottom: 10%;
+            left: 30%;
+        }
+        .farm{
+            height: 70%;
+            width: 23%;
+            box-shadow: 0px 0px 20px rgb(0, 0, 0 ,0.5);
+            position: absolute;
+            left: 15%;
+            top: 30%;
+            
+            padding:2%;
+           
+           background-image: url('images/d.jpg');
+           filter: brightness(70%)
+            
+           
+            border-radius: 10%;
+            
+        }
+        
+        .form
+        {
+            height: 100%;
+            width: 100%;
+            cursor: default;
+            font-size: 20px;
+            color:lightgoldenrodyellow;
+            border-radius: 30%;
+            
+    
+            
+          
+        }
+        .heading
+        {
+            height: 10vh;
+            width: 100%;
+            position: relative;
+            background: #005AA7;  
+            background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  
+            background: linear-gradient(to right, #FFFDE4, #005AA7); 
+
+        }
+        .ws_images
+        {
+            cursor: default;
+        }
+        .nav
+       {
+           width: 100%;
+           height: 8vh;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+            position: absolute;
+            top: 0%;
+            left: 0px;
+            background-color:rgb(1,28,133);
+           display: flex;
+           z-index: 10000000;
+           cursor: default;
+       }
+       .logo
+       {
+           width: 10%;
+           height: 100%;
+           color: rgb(116, 169, 238);
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           font-size: 50px;
+           float: left;
+       }
+       .menu
+       {
+           width: 60%;
+           height: 100%;
+           position: absolute;
+           left: 5%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+       .menu>a
+       {
+           margin-left: 5%;
+           
+            width: 25%;
+            height: 80%;
+            display: flex;
+           justify-content: center;
+           align-items: center;
+           text-decoration: none;
+           color:whitesmoke;
+           border-radius: 5px;
+          font-size: 20px;
+          transition: 1s;
+       }
+       .menu>a:hover
+       {
+           background-color: rgb(58, 134, 221);
+           transition: 1s;
+           hvr-bob;
+       }
+       .fa-gripfire
+       {
+           font-size:50px;
+
+       }
+        .content1
+        {
+            height: 40%;
+            width: 75%;
+            box-shadow: 0px 0px 20px rgb(0, 0, 0 ,0.5);
+            position: absolute;
+            top: 3%;
+            left: 13%;
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            
+        }
+        .content2
+        {
+            height: 48%;
+            width: 75%;
+            
+            position: absolute;
+            top: 50%;
+            left: 13%;
+            display: flex;
+            flex-direction: row;
+            box-shadow: 0px 0px 20px rgb(0, 0, 0 ,0.5);
+            
+        }
+        .text
+        {
+            height: 100%;
+            width: 50%;
+            
+            
+        
+            
+        }
+        .image
+        {
+            height: 80%;
+            width: 40%;
+            outline: 10px groove white;
+            box-shadow: 0px 0px 60px rgba(15, 12, 12, 0.911);
+            position: absolute;
+            right: 5%;
+            bottom: 10%;
+            background-blend-mode: hard-light;
+        }
+
+        .part1,.part2,.part3,.part4
+               {
+            height: 50%;
+            width: 25%;
+        
+        }
+            
+        .sec
+        {
+            height: 50%;
+            width: 100%;
+
+            position: absolute;
+            top: 50%;
+            display: flex;
+            flex-direction: row;
+            
+
+
+        }
+        .part5,.part6,.part7,.part8
+        {
+            height: 100%;
+            width: 25%;
+    
+        }
+        .book
+        {
+            height: 20%;
+            width: 30%;
+            
+            position: absolute;
+            top: 2%;
+            left: 35%;
+            font-size: 30px;
+            font-family: 'Galada', cursive;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main
+        {
+            height: 78%;
+            width: 90%;
+            
+            position: absolute;
+            top: 22%;
+            left: 5%;
+            display: flex;
+            flex-direction: row;
+
+        
+        }
+        .data1,.data2,.data3
+        {
+            height: 100%;
+
+            width: 33%;
+            padding: 2%;
+            margin: 1px;
+            position: relative;
+        }
+        .icon1,.icon2,.icon3
+        {
+            height: 50%;
+            width: 45%;
+            position: absolute;
+            left: 25%;
+            
+            border-radius: 50%;
+            box-shadow: 0px 0px 20px rgb(0, 0, 0 ,0.5);
+            
+        }
+        .icon1
+        {
+           
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 60px;
+        background-color: red;
+        color: azure;
+        }
+        .icon2{
+            display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 60px;
+        background-color: rgb(35, 115, 235);
+        color: azure;
+        } 
+        .icon3{
+            display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 60px;
+        background-color: rgb(10, 109, 26);
+        color: azure;
+        }
+        
+        
+
+        .cont1,.cont2,.cont3
+        {
+            height: 50%;
+            width: 90%;
+            position: absolute;
+            top: 53%;
+            left: 15%;            
+        }
+        .copyright
+        {
+            height: 40%;
+            width: 50%;
+            position: absolute;
+            top: 10%;
+            left: 5%;            
+            
+            color: #EAEAEA;
+        }
+        .card
+        {
+            height: 40%;
+            width: 15%;
+            position: absolute;
+            top: 10%;
+            right: 5%;            
+            
+        }
+        .fa-servicestack
+        {
+            font-size: 60px;
+            color: rgb(57, 140, 235);
+            position: absolute;
+            left: 3%;
+
+        }
+        .item
+        {
+            height: 80%;
+            width: 45%;
+            position: absolute;
+            top: 10%;
+            left: 10%;            
+            
+            font-size: 50px;
+            font-family: 'Playball', cursive;
+            color:darkblue;
+        }
+        .item1
+        {
+            height: 80%;
+            width: 15%;
+            position: absolute;
+            top: 10%;
+            left: 65%;            
+            
+            font-size: 20px;
+            font-family: 'Playball', cursive;
+            
+            display:flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .item2
+        {
+            height: 80%;
+            width: 10%;
+            position: absolute;
+            top: 10%;
+           right: 5%;            
+            
+    
+        }
+        .btn
+        {
+            height: 100%;
+            width: 100%;
+            background-color:rgb(58, 134, 221);
+            border: none;
+           outline: none;
+           cursor: pointer;
+           font-size: 20px;
+           text-decoration: none;
+           
+         
+
+           font-family: 'Lobster', cursive;
+           border-radius: 5px;
+        }
+        .btn:hover{
+            background-color: red;
+            color: #FFFDE4;
+        }
+        
+        input[type="number"], input[type="date"]
+        {
+            font-size: 22px;
+            margin: 2%;
+            width: 80%;
+            margin-left: 8%;
+            border-radius: 7px;
+            border: none;
+           outline: none;
+           background-color: #ADA996;
+           z-index: 10000;
+          
+            
+        }
+        input[type="submit"]
+        {
+            font-size:28px;
+            margin: 8%;
+            width: 50%;
+            background-color: blue;
+            margin-left: 25%;
+            top: 7%;
+            border-radius: 7px;
+            cursor: pointer;
+            border: none;
+           outline: none;
+        }
+        input[type="submit"]:hover{
+            background-color: green;
+            color: white;
+        }
+        .btn1
+        {
+            height: 100%;
+            width: 100%;
+            background-color:rgb(9, 47, 90);
+            border: none;
+           outline: none;
+           cursor: pointer;
+           font-size: 20px;
+           color: white;
+           font-family: 'Lobster', cursive;
+           border-radius: 5px; 
+           text-decoration: none;
+        }
+        .btn1:hover
+        {
+            background-color: purple;
+            color: white;
+        }
+        .uni
+        {
+            font-size: 30px; font-family: 'Galada', cursive; color: rgb(27, 46, 218);
+            position: absolute;
+            top: 10%;
+            left: 15%;
+        }
+        .txt
+        {
+            font-family: 'Markazi Text', serif;
+            font-size: 25px;
+            position: absolute;
+            top: 35%;
+            left: 12%;
+        
+            height: 70;
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+           
+        }
+        .def
+        {
+            height: 5%;
+            width: 25%;
+            
+
+            position: absolute;
+            left: 50%;
+            top: 48%;
+            transform: translate(-50%,-50%);
+            color:blue;
+            font-size: 25px;
+            font-family: 'Playball', cursive;
+        }
+        .low
+        {
+            height: 25%;
+            width: 80%;
+            padding: 2%;
+            position: absolute;
+            left: 3%;
+            bottom: 15%;
+            font-size: 19px; font-family:'Markazi Text', serif;
+        }
+        .fa-facebook-f,.fa-twitter,.fa-google-plus-g,.fa-tripadvisor
+        {
+            font-size: 20px;
+            color: white;
+        }
+        .fa-cc-paypal,.fa-cc-visa,.fa-cc-mastercard
+        {
+            font-size: 20px;
+            color:paleturquoise;
+        }
+    </style>
+</head>
+<body link="white" alink="yellow" vlink="white" >
+    <div class="heading" id="abc">
+        <i class="fab fa-servicestack fadeInUp animated"></i>
+        <div class="item fadeInUp animated" data-wow-delay="2s">
+            The Great Mission Hotel
+        </div>
+        <div class="item1">
+           <marquee> 1-800-130-000</marquee>
+        </div>
+        <div class="item2">
+           <a href="pages/rooms/room.html"> <button class="btn bounceIn animated" data-wow-delay="2s">BOOK NOW</button></a>
+        </div>
+    </div>
+    <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+        <div class="ws_images" style="filter:brightness(95%);"><ul>
+                <li><img src="data1/images/a.png" id="wows1_0"/></li>
+                <li><img src="data1/images/b.jpg" id="wows1_1"/></li>
+                <li><img src="data1/images/d.jpg" id="wows1_2"/></li>
+                <li><img src="data1/images/f.jpg" id="wows1_3"/></li>
+           
+           
+        </div>
+        
+            <div class="nav">
+                <div class="logo"></div>
+                <div class="menu">
+                    <a href="index.html" class="hvr-grow shadow">Home</a>
+                    <a href="pages/rooms/room.html" class="hvr-grow shadow">Rooms</a>
+                    <a href="pages/event/event.html" class="hvr-grow shadow"> Events</a>
+                    <a href="pages/about/aboutus.html" class="hvr-grow shadow">About</a>
+                    <a href="pages/contact/contact.html" class="hvr-grow shadow">Contact</a>
+                </div>
+            </div>
+    
+        <div class="content flash animated">
+                WELCOME TO THE GREAT MISSION HOTEL. OPEN UP TO
+                A WORLD OF LUXURY
+            <div class="button">
+               <a href="pages/rooms/room.html"> <button class="btn1 hvr-grow shadow " >See Our Rooms</button></a>
+            </div>
+         </div>
+         <div class="farm">
+         <div class="form fadeInUp animated">
+             <b style="font-size:25px; color:lightgoldenrodyellow; font-family: 'Shrikhand', 'Lobster', cursive; margin-left: 10%; z-index: 100000;"> Book Your Stay</b>
+             <hr color="blue">
+             <form action="#">
+                Check In<br>
+                <input   type="date" required><br>
+                 Check Out<br>
+                 <input   type="date" required><br>
+                 Adults<br>
+                 <input type="number" min="1" max="5" placeholder="No of adults" required><br>
+                 Kids<br>
+                 <input type="number" min="0" max="3" placeholder="No of kids"><br>
+                 <input type="submit" value="SEARCH">
+             </form>
+         </div>
+         </div>
+        </div>
+        <div class="class1">
+            <div class="content1">
+                <div class="text">
+                   <b class="uni"> Unique Room style
+                        <hr color="blue" width="20%" align="center">
+                   </b>
+                  <div class="txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam tempora quia sequi debitis molestias maxime vero possimus itaque sit quaerat delectus incidunt ab accusantium facilis velit, alias nam beatae placeat?</div>
+                     <br><br>
+                    
+                </div>
+                <div class="image wow fadeInUp animated">
+                    <img src="images/m.jpg" style="height: 100%; width: 100%; filter:sepia(10%);">
+                </div>
+            </div>
+            <div class="def"> Defining Luxury Travel since 2002</div>
+           
+            <div class="content2">
+                <div class="part1">
+                        <figure class="imghvr-shutter-in-out-diag-1" style="height: 100%; width: 100%;">
+                                <img src="images/f.PNG" style="height: 100%; width: 100%;">
+                                <figcaption style="background-image: url('images/n.jpg'); background-size: cover;">
+                                    
+                                </figcaption>
+                              </figure>
+                </div>  
+                <div class="part2">
+                    <p align="center" style="font:18px; color:rgb(172, 19, 19);"> PERFECT EVENT SPACE</p>
+                        <p style="  font-family: 'Markazi Text', serif; font-size: 20px; padding: 8%;"> The venue must be easily accessible. Choose a location that is easy to find, has good transport links and eor all of your guests. </p>
+                    
+                </div> 
+                <div class="part3">
+                        <figure class="imghvr-shutter-in-out-diag-1" style="height: 100%; width: 100%;">
+                                <img src="images/g.PNG" style="height: 100%; width: 100%;">
+                                <figcaption style="background-image: url('images/o.jpg'); background-size: cover;">
+                                    
+                                </figcaption>
+                              </figure>
+                </div>  
+                <div class="part4"><p align="center" style="font:18px; color:rgb(172, 19, 19);">CONTEMPORARY DECOR</p>
+                    <p style="  font-family: 'Markazi Text', serif; font-size: 20px;padding: 8%;">Sleek architecture. Sublime interiors. Experience the ultimate in 21st-century luxury in our modern design retreats. </p></div> 
+                <div class="sec">
+                <div class="part5"><p align="center" style="font:18px; color:rgb(172, 19, 19);">CENTRAL LOCATION</p>
+                    <p style="padding: 3%;  font-family: 'Markazi Text', serif; font-size: 20px;padding: 8%;">Located in central Amsterdam, 500 metres from the Flower Market, Modern Studio in a Central ... It was very good price compared to other hotels in the city.</p></div>  
+                <div class="part6"> <figure class="imghvr-shutter-in-out-diag-1" style="height: 100%; width: 100%;">
+                        <img src="images/h.PNG" style="height: 100%; width: 100%;">
+                        <figcaption style="background-image: url('images/p.jpg'); background-size: cover;">
+                            
+                        </figcaption>
+                      </figure></div> 
+                <div class="part7"><p align="center" style="font:18px; color:rgb(172, 19, 19);">SUPERB CUISINE</p>
+                    <p style="padding: 3%;  font-family: 'Markazi Text', serif; font-size: 20px;padding: 8%;">The International Food & Drink, Hotel, Restaurant, Bakery and Food Service Equipment, Supplier & Services Exhibition and Conference.</p></div>  
+                <div class="part8">
+                        <figure class="imghvr-shutter-in-out-diag-1" style="height: 100%; width: 100%;">
+                                <img src="images/i.PNG" style="height: 100%; width: 100%;">
+                                <figcaption style="background-image: url('images/q.jpg'); background-size: cover;">
+                                    
+                                </figcaption>
+                              </figure>
+                </div> </div> 
+               
+              
+            </div>
+            <div class="scroll">
+                <a href="#abc"><i class="fas fa-arrow-circle-up"></i></a>
+            </div>
+
+        </div>
+        <div class="class2">
+            <div class="book">Why Book with us?</div>
+            <div class="main">
+                <div class="data1 wow fadeInUp animated">
+                    <div class="icon1 " >
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <div class="cont1">
+                        <p style="font-size: 23px; font-family:'Markazi Text', serif;  margin-left: 5%;">TRUSTED BY OVER 8M+ HAPPY  TRAVELLERS</p>
+                        <div class="low">Book with one of most trusted travel portals in India</div>
+                    </div>
+                </div>
+                <div class="data2  wow fadeInUp animated" data-wow-delay="0.5s">
+                    <div class="icon2">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <div class="cont2">
+                        <p style="font-size: 23px; font-family:'Markazi Text', serif;margin-left: 5%;  ">LOWEST PRICE GUARNTEEE</p>
+                        <div class="low">Find a better price on any online travel site, we refund you double the difference amount!</div>
+                    </div>
+                </div>
+                <div class="data3  wow fadeInUp animated" data-wow-delay="1s">
+                    <div class="icon3">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <div class="cont3">
+                        <p style="font-size: 23px; font-family:'Markazi Text', serif; margin-left: 5%;  ">24X7 CUSTOMER SUPPORT</p>
+                        <div class="low">Round the clock support for all your hotel needs</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="class3">
+            <div class="copyright">
+                <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>&nbsp;
+                    <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>&nbsp;
+                        <a href="http://www.gmail.com" target="_blank"><i class="fab fa-google-plus-g"></i></a>&nbsp;
+                        <a href="http://www.gmail.com" target="_blank"><i class="fab fa-tripadvisor"></i></a>&nbsp;
+                        <p aliign="center">© 2023 by  THE GREAT MISSION HOTEL. Proudly Created by <B><a href="pages/profile/profie.html">Shelza</a> AND <a href="pages/profile/firstprprofile.html"> SHASHANK</a></B></p>
+            </div>
+            <div class="card">
+                <a href="http://www.paypal.com" target="_blank"><i class="fab fa-cc-paypal"></i></a>&nbsp;
+                <a href="http://www.visa.com" target="_blank"><i class="fab fa-cc-visa"></i></a>&nbsp;
+                <a href="http://mastercard.com" target="_blank"><i class="fab fa-cc-mastercard"></i></a>&nbsp;
+            </div>
+        </div>
+        <script src="js1/wow.js"></script>
+        <script>
+             new WOW().init();
+
+        </script>
+       
+        <script type="text/javascript" src="engine1/wowslider.js"></script>
+        <script type="text/javascript" src="engine1/script.js"></script>
+        <!-- End WOWSlider.com BODY section -->
+
+</body>
+</html>

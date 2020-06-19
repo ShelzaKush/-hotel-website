@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Galada|Karla|Lobster" rel="stylesheet">
+    <style>
+     html,body
+        {
+            margin: 0px;
+            padding: 0px;
+            
+        }
+
+        *
+        {
+            box-sizing: border-box;
+        }
+        .container1
+        {
+            width: 100%;
+            height: 100vh;
+           overflow: hidden;
+           position: relative;
+    
+        }
+        .container
+        {
+            width: 110%;
+            height: 110%;
+            background-image: url('c.jpg');
+            background-size: cover;
+            filter: brightness(50%);
+            position: absolute;
+            left: -5%;
+            top: -5%;
+            border: 10px dashed black;
+        }
+        .card
+        {
+            width: 30%;
+            height: 90vh;
+            
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: azure;
+        }
+        .image
+        {
+            width: 100%;
+            height: 45%;
+            position: absolute;
+            top: 22%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-image: url('b.jpg');
+            background-size: contain;
+            transform: translateY(-65%) skew(0deg,-10deg);
+        }
+        .info
+        {
+            width: 100%;
+            height: 50%;
+            
+            position: absolute;
+            top: 33%;
+            /* transform: skew(0deg,10deg); */
+        }
+        .avtar
+        {
+            width: 35%;
+            height: 25%;
+            border: 5px solid white;
+            border-radius: 50%;
+            position: absolute;
+            top: 32%;
+            left: 28%;
+            transform: translateX(-50%);
+            
+            background-image: url('l.png');
+            background-size: cover;
+            z-index: 2;
+        
+
+        }
+        .last
+        {
+            height: 30%;
+            width: 100%;
+            
+            position: absolute;
+            top: 100%;
+            background-color: rgb(52,69,85);
+            transform: translateY(-65%) skew(0deg,-7deg);
+            
+        }
+        .name
+        {
+            height: 22%;
+            width: 52%;
+            
+            position: absolute;
+            right: 0%;
+            top: 12%;
+            font-size: 30px;
+            padding: 1%;
+            text-decoration: underline;
+            text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+            font-family:'Galada', cursive;
+        }
+        .data
+        {
+            height: 60%;
+            width: 80%;
+            
+            position: absolute;
+            top: 35%;
+            left: 10%;
+            padding: 5%;
+            font-size: 20px;
+            font-family: 'Fjalla One', sans-serif;
+            
+    
+        }
+        .icon 
+        {
+            list-style: none;
+            display: flex;
+            float: left;
+            font-size: 30px;
+        }
+        .fa-facebook-f
+        {
+            background-color: white;
+            font-size: 30px;
+            padding: 2%;
+            color: rgb(52,69,85);
+            border-radius: 10%;
+            position: absolute;
+            left: 15%;
+            top: 10%;
+            width: 15%;               
+        }
+        .fa-google-plus-g{
+            background-color: white;
+            font-size: 30px;
+            padding: 2%;
+            color: rgb(52,69,85);
+            border-radius: 10%;
+            position: absolute;
+            left: 40%;
+            top: 10%;
+        }
+        .fa-twitter
+        {
+            background-color: white;
+            font-size: 30px;
+            padding: 2%;
+            color: rgb(52,69,85);
+            border-radius: 10%;
+            position: absolute;
+            left: 70%;
+            top: 10%;   
+        }
+         .icon
+        {
+            height: 10%;
+            width: 50%;
+            
+            z-index: 5;
+            position: absolute;
+            bottom: 2%;
+            left: 22%;
+            background-color: rgb(52,69,85);
+            padding: 3%;
+           margin: 2%;
+           
+
+        } 
+        
+    </style>
+</head>
+<body>
+    <div class="container1">
+         <div class="container">
+            
+         </div>
+    </div>
+
+    <div class="card">
+        <div class="image"></div>
+        <div class="avtar"></div>
+        <div class="info">
+        <div class="name">Shelza Kushwah </div>
+    <div class="data"> <p style="color: rgb(rgb(52,69,85); font-family: 'Fjalla One', sans-serif; ">Web Developer-Web Designer</p>
+    <p><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, eius </q></p> </div></div>
+        <div class="last">
+        
+           
+        
+        </div>
+        <div class="icon">
+           <a href="http//www.facebook.com"> <i class="fab fa-facebook-f"></i></a>&nbsp;&nbsp;
+           <a href="http//www.gmail.com"><i class="fab fa-google-plus-g"></i></a>&nbsp;&nbsp;
+           <a href="http//www.twitter.com"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</body>
+</html>

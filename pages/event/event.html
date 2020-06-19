@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Cabin+Condensed|Courgette|Dancing+Script|Gaegu|Galada|Lobster|Markazi+Text|Pacifico|Tangerine" rel="stylesheet">
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+    <style>
+          html,body
+        {
+            margin: 0px;
+            padding: 0px;
+           
+        }
+
+        *
+        {
+            box-sizing: border-box;
+        }
+        #wowslider-container1
+        {
+            
+            width: 100%;
+            height: 100%;
+    
+        }
+    
+       .ws_images
+       {
+           cursor: default;
+           
+       }
+       .head
+       {
+         height: 15vh;
+         width: 100%;
+         
+        color: white;
+         background: #200122;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+         font-size: 40px;
+         display: flex;
+         justify-content: center;
+         align-items: center; 
+         font-family: 'Galada', cursive;
+         
+
+       }
+       .slide
+       {
+         height: 78.5vh;
+         width: 70%;
+         border: 2px solid black;
+         position: absolute;
+         left: 18%;
+         top: 22%;
+         outline: 10px groove brown;
+        box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.8);
+        
+        z-index: 10000;
+       }
+       .class3
+       {
+           height: 130vh;
+           width: 100%;
+           
+           position: absolute;
+           top: 110vh;
+           background-image: url('shel/a.jpg');
+        
+       }
+       .class4
+       {
+        height: 60vh;
+           width: 100%;
+           border: 2px solid burlywood;
+           position: absolute;
+        top: 240%;
+        background: #ADA996;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+       }
+       .last
+       {
+        height: 15vh;
+           width: 100%;
+           border: 2px solid greenyellow;
+           position: absolute;
+        top: 300%;
+        background-color: rgb(223, 11, 57);
+       }
+       .image1
+       {
+        height: 50vh;
+           width: 40%;
+           border-radius: 120px;
+           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+
+           position: absolute;
+        top: 3%;
+        left: 10%;
+       }
+       .image2
+       {
+        height: 50vh;
+           width: 40%;
+           border-radius: 120px;
+           position: absolute;
+         top: 3%;
+         left: 51%;
+         
+
+       }
+       .text1
+       {
+        height: 70vh;
+           width: 40%;
+        
+           position: absolute;
+        top: 42%;
+        left:10%;
+
+       }
+       .text2
+       {
+        height: 70vh;
+           width: 40%;
+
+           position: absolute;
+        top: 42%;
+        left:51%;
+
+       }
+       .cont1,.cont3
+       {
+        height: 30vh;
+           width: 90%;
+           
+           position: absolute;
+        top: 2%;
+        left:5%;
+        padding: 5%;
+
+       }
+       .cont2,.cont4
+       {
+        height: 30vh;
+           width: 90%;
+
+           position: absolute;
+        top: 50%;
+        left:5%;
+        padding: 3%;
+        font-family: 'Cabin Condensed', sans-serif;
+       }
+       .hed
+       {
+           height: 10%;
+           width: 30%;
+           position: absolute;
+           left: 35%;
+           top: 2%;
+           background-color: rgb(223, 11, 57);
+           font-size: 30px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           color: bisque;
+           font-family: 'Dancing Script', cursive;
+        
+
+                  }
+      .hed2
+      {
+        height: 70%;
+           width: 90%;
+           position: absolute;
+           left: 5%;
+           bottom: 15%;
+    
+           background: #7F00FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      box-shadow: 0px 0px 10px rgba(15, 12, 12, 0.911);
+
+      }
+      .vedio1
+      {
+        height: 70%;
+           width: 30%;
+           position: absolute;
+           left: 3%;
+           bottom: 9%;
+        
+           background: #d9a7c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      }
+      .vedio2
+      {
+        height: 70%;
+           width: 30%;
+           position: absolute;
+           left: 35%;
+           bottom: 9%;
+        
+           background: #d9a7c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      }
+      .vedio3
+      {
+        height: 70%;
+           width: 30%;
+           position: absolute;
+           right: 3%;
+           bottom: 9%;
+        
+           background: #d9a7c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      }
+      .shel
+      {
+          height: 95vh;
+          width: 100%;
+        
+          background-image: url('shel/v.jpeg');
+          background-size: cover;
+          filter: brightness(90%);
+      }
+      .main
+      {
+          height: 95%;
+          width: 82%;
+        
+          position: absolute;
+          left: 9.5%;
+          bottom: 3%;
+          background-color: antiquewhite;
+           box-shadow: 0px 0px 60px rgba(15, 12, 12, 0.911);
+      }
+      .fa-servicestack
+      {
+          font-size: 60px;
+          color:#F2F2F2;
+      }.class6
+        {
+            width:100%;
+            height:20vh;
+            
+        position: absolute;
+        top: 300%;
+            background: #200122;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+        .qlink
+        {
+            width:13%;
+            height: 20%;
+            
+            position: absolute;
+            bottom:65%;
+            left:42%;
+            color:white;
+            font-size: 20px;
+            font-family: 'Pacifico', cursive;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+        }
+        .data10
+{
+    width:80%;
+            height: 30%;
+            left: 10%;
+            
+            bottom: 20%;
+            color: wheat;
+            position: absolute;
+            font-size: 20px;
+            font-family: 'Pacifico', cursive;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            text-decoration: none;
+}
+
+    </style>
+</head>
+<body >
+    <div class="head">
+          <a href="../index.html">  <i class="fab fa-servicestack fadeInUp animated"></i></a>
+            <marquee>OUR EVENTS</marquee> </div>
+    <div class="shel"><div class="slide">
+         
+<div id="wowslider-container1">
+        <div class="ws_images"><ul>
+                <li><img src="data1/images/a.jpg" alt="a" title="a" id="wows1_0"/></li>
+                <li><img src="data1/images/b.jpg" alt="b" title="b" id="wows1_1"/></li>
+                <li><img src="data1/images/c.jpg" alt="c" title="c" id="wows1_2"/></li>
+                <li><img src="data1/images/d.jpg" alt="d" title="d" id="wows1_3"/></li>
+                <li><img src="data1/images/e.png" alt="e" title="e" id="wows1_4"/></li>
+                <li><img src="data1/images/g.jpg" alt="g" title="g" id="wows1_6"/></li>
+            </ul>
+        </div>
+       
+  
+</div></div></div>
+<div class="class3">
+    <div class="main"></div>
+    <div class="image1">
+        <img src="shel/a.png" style="height: 100%; width: 100%;">
+    </div>
+    <div class="image2">
+            <img src="shel/b.png" style="height: 100%; width: 100%;">
+    </div>
+    <div class="text1">
+        <div class="cont1">
+           <h2 style="position: absolute; top: 0%; left: 12%; font-family:'Courgette', cursive;"><font size="5" color="blue">LA MISSION RESTAURANT & BAR</font> </h2><br>
+
+           <font size="6" color="red" style="position: absolute; left: 25%; font-family: 'Tangerine', cursive; ">Chef Restaurant</font><br><br>
+ 
+
+       <p style="position: absolute; left: 30%; top: 37%; font-family: 'Cabin Condensed', sans-serif;"> Lunch and Dinner:<br>
+
+        Mon-Sun 11am – 11pm <br><br></p>
+
+ 
+
+      <p style="position: absolute; left: 25%; bottom: 1.5%; font-family: 'Cabin Condensed', sans-serif" >  For inquiries and reservations:<br>
+
+       Please call: 123-456-7890</p>
+       <hr color="black" width="10%" style="position: absolute; bottom: 0.2%; left: 40%;">
+        </div>
+        <div class="cont2">
+            <p style="position: absolute; left: 30%;">Breakfast is served:<br></p>
+
+               <p style="position: absolute; left: 10%; top: 20%;"> Mon-Fri 6:30am – 10:00am  Sat-Sun 7:30am – 11:00am</p><br><br>
+               <p style="position: absolute; left: 10%; bottom: 20%;">Our breakfast buffet have everything you can dream of..</p>
+               <p style="position: absolute; left: 12%; bottom: 10%;">
+                Fresh organic products, homemade bread, waffles etc.
+               </p>
+               <hr color="black" width="10%" style="position: absolute; bottom: 1%; left: 40%;">
+        </div>
+    </div>
+    <div class="text2">
+            <div class="cont3">
+                <h2 style="position: absolute; top: 0%; left: 30%; font-family: 'Courgette', cursive;"><font size="5" color="blue">PLAN AN EVENT</font> </h2><br>
+                <font size="6" color="red" style="position: absolute; left: 35%;  font-family: 'Tangerine', cursive; ">Weddings</font><br><br>
+                <p style="font-family: 'Cabin Condensed', sans-serif;">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
+                <hr color="black" width="10%" style="position: absolute; bottom: 3%; left: 40%;">
+            </div>
+            <div class="cont4">
+                <font size="6" color="red" style="position: absolute; left: 35%;  font-family: 'Tangerine', cursive; ">Confrences</font><br><br>
+                <p>
+                    I’m a great place for you to tell a story and let your users know a little more about you.
+                    always conduct confrences regarding any type of issues, many international cpmpanies came here..
+                </p>
+                <hr color="black" width="10%" style="position: absolute; bottom: 10%; left: 40%;">
+            </div>
+    </div>
+</div>
+<div class="class4">
+    <div class="hed">
+        Some Event Video
+    </div>
+    <div class="hed2">
+        <div class="vedio1">
+                <video controls height="100%" width="100%">
+                        <source src="vedio/a.mp4">
+                        </video>
+        </div>
+        <div class="vedio2">
+                <video controls height="100%" width="100%">
+                        <source src="vedio/b.mp4">
+                        </video>
+        </div>
+        <div class="vedio3">
+                <video controls height="100%" width="100%">
+                        <source src="vedio/c.mp4">
+                        </video>
+        </div>
+    </div>
+</div>
+<div class="class6">
+    <div class="qlink">
+       <u>
+            <p class=" wow fadeInUp animated" >QUICK &nbsp; LINK</p>
+        </u>
+    </div>
+    <div class="data10">
+             <a href="home.html"style="color: white ">home</a> </a> &nbsp;&nbsp;&nbsp; <a href="index2.html"style="color: white">Rooms</a>&nbsp;&nbsp;&nbsp;<a href="dining.html"style="color: white">Dining & events</a>&nbsp;&nbsp;&nbsp;<a href="about.html"style="color: white">About</a>&nbsp;&nbsp;&nbsp; <a href=" contact.html" style="color: white">Contact</a>
+            
+           
+    </div>
+</div>
+
+
+        <script type="text/javascript" src="engine1/wowslider.js"></script>
+        <script type="text/javascript" src="engine1/script.js"></script>
+         -->
+        
+</body>
+</html>
